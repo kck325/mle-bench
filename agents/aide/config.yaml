@@ -21,8 +21,8 @@ aide:
   <<: *defaults
   kwargs:
     <<: *kwargs_common
-    agent.code.model: gpt-4o-2024-08-06
-    agent.feedback.model: gpt-4o-2024-08-06
+    agent.code.model: grok-beta
+    agent.feedback.model: grok-beta
     agent.steps: *step_count
   env_vars:
     <<: *env_vars
@@ -32,8 +32,8 @@ aide/dev:
   <<: *defaults
   kwargs:
     <<: *kwargs_common
-    agent.code.model: gpt-4o-2024-08-06
-    agent.feedback.model: gpt-4o-2024-08-06
+    agent.code.model: grok-beta
+    agent.feedback.model: grok-beta
     agent.steps: 8
   env_vars:
     <<: *env_vars
@@ -43,9 +43,9 @@ aide/o1-preview:
   <<: *defaults
   kwargs:
     <<: *kwargs_common
-    agent.code.model: o1-preview
+    agent.code.model: grok-beta
     agent.code.temp: 1
-    agent.feedback.model: gpt-4o-2024-08-06
+    agent.feedback.model: grok-beta
     agent.steps: *step_count
     agent.convert_system_to_user: True
   env_vars:
